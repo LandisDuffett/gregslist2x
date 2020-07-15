@@ -8,7 +8,7 @@ import store from '../store.js';
 function _draw() {
   let template = `<div id="form" class="row justify-content-center pb-5">
     <div class="col-12 text-center">
-      <h5>Make a car!</h5>
+      <h5>Sell a car!</h5>
     </div>
     <form onsubmit="app.carsController.addCar(event)" class="col-8">
       <div class="form-group">
@@ -58,6 +58,7 @@ export default class CarsController {
   loadCars() {
     _draw()
   }
+
   addCar(event) {
     event.preventDefault();
     let formData = event.target

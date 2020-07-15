@@ -17,7 +17,7 @@ function _draw() {
             </div>
              <div class="form-group">
                 <label for="bathrooms">Bathrooms</label>
-                <input type="text" name="bathrooms" class="form-control" placeholder="Enter Number of Bedrooms...">
+                <input type="text" name="bathrooms" class="form-control" placeholder="Enter Number of Bathrooms...">
             </div>
             <div class="form-group">
                 <label for="levels">Levels</label>

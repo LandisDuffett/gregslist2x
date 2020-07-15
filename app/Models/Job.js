@@ -14,8 +14,8 @@ export default class Job {
         <div class="col-3 border rounded shadow">
                 <h1>Company: ${this.company}</h1>
                 <h1>Title: ${this.jobTitle}</h1>
-                <h1>Hourly pay: ${this.rate}</h1>
-                <h1>Hours per week: $${this.hours}</h1>
+                <h1>Hourly pay: $${this.rate}</h1>
+                <h1>Hours per week: ${this.hours}</h1>
                 <img class="img-fluid" src="${this.imgUrl}"/>
                 <h1>${this.description}</h1>
                 <button class="btn btn-danger" onclick="app.jobsController.deleteJob('${this.id}')">Delort</button>
