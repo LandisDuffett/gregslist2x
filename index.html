@@ -13,50 +13,33 @@
 </head>
 
 <body>
-    <h1>Hello gregslist</h1>
-    <main class="container-fluid">
-        <div id="form" class="row justify-content-center pb-5">
-            <div class="col-12 text-center">
-                <h5>Make a car!</h5>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="col-4"><button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="app.carsController.loadCars()">Cars </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="app.housesController.loadHouses()">Houses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="app.jobsController.loadJobs()">Jobs</a>
+                    </li>
+                </ul>
             </div>
-            <form onsubmit="app.carsController.addCar(event)" class="col-8">
-                <div class="form-group">
-                    <label for="make">Make</label>
-                    <input type="text" name="make" class="form-control" placeholder="Enter Make...">
-                </div>
-                <div class="form-group">
-                    <label for="model">Model</label>
-                    <input type="text" name="model" class="form-control" placeholder="Enter Model...">
-                </div>
-                <div class="form-group">
-                    <label for="year">Year</label>
-                    <input type="number" min="1900" max="2020" name="year" class="form-control"
-                        placeholder="Enter Year...">
-                </div>
-                <div class="form-group">
-                    <label for="price">Price</label>
-                    <input type="number" min="0" name="price" class="form-control" placeholder="Enter Price...">
-                </div>
-                <div class="form-group">
-                    <label for="imgUrl">Image Url</label>
-                    <input type="text" name="imgUrl" class="form-control" placeholder="Enter Image Url...">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <input type="text" name="description" class="form-control" placeholder="Enter Description...">
-                </div>
-                <button class="btn btn-primary btn-block" type="submit">Submit</button>
-            </form>
         </div>
-        <div id="cars" class="row">
-            <!-- <div class="col-3 border rounded shadow">
-                <h1>make</h1>
-                <h1>model</h1>
-                <h1>year</h1>
-                <h1>price</h1>
-                <h1>image</h1>
-            </div> -->
+        <div class="col-8 text-light d-flex justify-content-left">
+            <h1>Welcome to Greg's List!</h1>
         </div>
+    </nav>
+
+    <main class="container-fluid" id="items">
+
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
