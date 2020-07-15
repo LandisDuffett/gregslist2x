@@ -18,8 +18,8 @@ export default class Job {
                 <h1>Hours per week: $${this.hours}</h1>
                 <img class="img-fluid" src="${this.imgUrl}"/>
                 <h1>${this.description}</h1>
-                <button class="btn btn-danger" onclick="app.carsController.deleteCar('${this.id}')">Delort</button>
-                <button class="btn btn-info" onclick="app.carsController.bidOnCar('${this.id}')">Bid</button>
+                <button class="btn btn-danger" onclick="app.jobsController.deleteJob('${this.id}')">Delort</button>
+                <button class="btn btn-info" onclick="app.jobsController.bidOnJob('${this.id}')">Bid</button>
             </div>`
   }
 }
